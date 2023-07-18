@@ -105,6 +105,16 @@ h1 {
     text-transform: uppercase;
 }
 
+/* ---------------------about part design-------------- */
+#about {
+    padding: 100px 200px;
+    text-align: center;
+}
+
+.aboutDesc {
+    padding: 100px 0;
+    text-align: center;
+}
 
 
 
@@ -131,6 +141,7 @@ h1 {
 
 @media screen and (max-width: 1024px) {
 
+    /* header------------------- */
     nav ul {
         gap: 15px;
         font-size: 18px;
@@ -138,6 +149,15 @@ h1 {
 
     .headerSubTxt {
         font-size: 18px;
+    }
+
+    /* about------------------- */
+    #about {
+        padding: 60px 100px;
+    }
+
+    .aboutDesc {
+        padding: 60px 0;
     }
 }
 
@@ -153,6 +173,19 @@ h1 {
     .menubar {
         display: block;
     }
+
+    .aboutTitle {
+        font-size: 35px;
+    }
+
+    .aboutDesc {
+        font-size: 16px;
+        padding: 40px 0;
+    }
+
+    .aboutBtn {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -161,6 +194,11 @@ h1 {
     .headerBtn2 {
         font-size: 16px;
         width: 190px;
+    }
+
+    /* about---------------- */
+    #about {
+        padding: 50px 50px;
     }
 }
 
@@ -201,5 +239,39 @@ h1 {
         width: 100%;
         padding: 10px 0;
         font-size: 14px;
+    }
+
+    /* about-------------------- */
+    #about {
+        padding: 50px 20px;
+    }
+
+    .aboutBtn {
+        width: 100%;
+    }
+
+    .aboutDesc {
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    /* header------------------------- */
+    .headerSubTxt {
+        font-size: 14px;
+    }
+
+    /* about------------------------- */
+    .aboutTitle {
+        font-size: 25px;
+    }
+
+    .aboutDesc {
+        font-size: 16px;
+    }
+
+    .aboutBtn {
+        font-size: 16px;
     }
 }
