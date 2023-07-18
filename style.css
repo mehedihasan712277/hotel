@@ -116,7 +116,49 @@ h1 {
     text-align: center;
 }
 
+/* --------------------service part design ---------------- */
+.service {
+    padding: 50px 100px;
+}
 
+.serviceContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.serviceBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.serviceImageContainer {
+    border: 2px solid #f03059;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #f03059;
+    font-size: 30px;
+}
+
+.serviceDesc {
+    width: 200px;
+    text-align: center;
+}
+
+.servicebtn {
+    padding: 10px 25px;
+    font-size: 16px;
+}
 
 
 
