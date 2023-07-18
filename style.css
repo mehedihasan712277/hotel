@@ -235,8 +235,71 @@ h1 {
     font-weight: 900;
 }
 
+/* --------------login---------------------- */
+.login {
+    padding: 100px;
+    background-color: #f03059;
+    font-size: 5vw;
+}
 
+.loginTitle {
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
 
+.loginSubTitle {
+    font-size: .6em;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+    margin: 20px 0 30px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 30vw;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.loginBtn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+/* --------------footer------------------- */
+footer {
+    background-color: #f03059;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    border-top: 2px solid white;
+    width: 80%;
+    padding: 40px 0;
+    margin: 0 auto;
+    font-size: 2vw;
+    letter-spacing: 3px;
+}
 
 
 
@@ -340,6 +403,16 @@ h1 {
 
     .functionContainer {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* login---------------------- */
+    .login {
+        padding: 100px 50px;
+    }
+
+    input,
+    textarea {
+        width: 70vw;
     }
 }
 
@@ -466,6 +539,21 @@ h1 {
     .functionContainer {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* login-------------------- */
+    .login {
+        padding: 50px 20px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    /* footer---------------- */
+    .footer {
+        font-size: 3vw;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -499,7 +587,4 @@ h1 {
     .aboutBtn {
         font-size: 16px;
     }
-
-    /* function------------------- */
-
 }
