@@ -160,9 +160,80 @@ h1 {
     font-size: 16px;
 }
 
+/* -------------------book now part-------------- */
+.book {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 3vw;
+    color: white;
+    font-weight: 700;
+}
 
+.number {
+    font-size: .5em;
+    font-weight: 500;
+}
 
+.bookBtn {
+    font-size: .4em;
+    text-transform: uppercase;
+}
 
+/* -----------------function ---------------*/
+.function {
+    padding: 70px 100px;
+    background-color: rgba(192, 185, 185, 0.226);
+}
+
+.functionContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 30px;
+}
+
+.functionTitle {
+    margin-bottom: 10vh;
+}
+
+.fBox {
+    /* box-shadow: 2px 2px 16px grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 5px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.fImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f03059;
+    border-radius: 50%;
+    color: #f03059;
+    font-size: 30px;
+}
+
+.ptitle {
+    color: #f03059;
+    font-size: 30px;
+    font-weight: 900;
+}
 
 
 
@@ -210,6 +281,16 @@ h1 {
     .serviceContainer {
         gap: 15px;
     }
+
+    /* book------------------- */
+    .book {
+        font-size: 3.5vw;
+    }
+
+    /* function--------------------- */
+    .functionContainer {
+        gap: 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -246,6 +327,20 @@ h1 {
         flex-wrap: wrap;
         gap: 30px;
     }
+
+    /* book------------------------- */
+    .book {
+        font-size: 4vw;
+    }
+
+    /* function------------ */
+    .function {
+        padding: 50px 50px;
+    }
+
+    .functionContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -264,6 +359,29 @@ h1 {
     /* service----------------- */
     .service {
         padding: 50px;
+    }
+
+    .book {
+        font-size: 10vw;
+    }
+
+    /* function------------------------- */
+    .fBox {
+        padding: 20px 10px;
+    }
+
+    .fImgContainer {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+    }
+
+    .ptitle {
+        font-size: 20px;
+    }
+
+    .pDesc {
+        font-size: 14px;
     }
 }
 
@@ -335,8 +453,18 @@ h1 {
     }
 
     /* service-------------------- */
-    .service {
+    .service,
+    .function {
         padding: 50px 20px;
+    }
+
+    /* function---------------- */
+    .functionTitle {
+        font-size: 30px;
+    }
+
+    .functionContainer {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -371,4 +499,7 @@ h1 {
     .aboutBtn {
         font-size: 16px;
     }
+
+    /* function------------------- */
+
 }
